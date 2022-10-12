@@ -14,35 +14,35 @@ GREEN = (0, 255, 0)
 BLUE = (0, 150, 255)
 RED = (255, 0, 0)
 
-XLarge = pygame.font.Font("C:/Users/adpoi/Documents/mypython/shrek/Pixellari.ttf", 70)
-Large = pygame.font.Font("C:/Users/adpoi/Documents/mypython/shrek/Pixellari.ttf", 40)
-Small = pygame.font.Font("C:/Users/adpoi/Documents/mypython/shrek/Pixellari.ttf", 20)
+XLarge = pygame.font.Font("txt/Pixellari.ttf", 70)
+Large = pygame.font.Font("txt/Pixellari.ttf", 40)
+Small = pygame.font.Font("txt/Pixellari.ttf", 20)
 
 background = pygame.Surface(screen.get_size())
 background = background.convert()
 background.fill((20, 20, 20))
 
-puss_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/cpussinboots.png").convert_alpha()
-dpuss_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/dpussinboots.png").convert_alpha()
+puss_image = pygame.image.load("imgs/cpussinboots.png").convert_alpha()
+dpuss_image = pygame.image.load("imgs/dpussinboots.png").convert_alpha()
 
-bee_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/ebeeswarm.png").convert_alpha()
-honey_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/ehoney.png").convert_alpha()
+bee_image = pygame.image.load("imgs/ebeeswarm.png").convert_alpha()
+honey_image = pygame.image.load("imgs/ehoney.png").convert_alpha()
 
-donkey_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/cdonkey.png").convert_alpha()
-wagon_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/wagon.png").convert_alpha()
+donkey_image = pygame.image.load("imgs/cdonkey.png").convert_alpha()
+wagon_image = pygame.image.load("imgs/wagon.png").convert_alpha()
 
-rumple_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/erumple.png").convert_alpha()
-skull_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/eskull.png").convert_alpha()
-toll_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/etoll.png").convert_alpha()
-swamp_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/eswamp.png").convert_alpha()
-town_image = pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/etown.png").convert_alpha()
+rumple_image = pygame.image.load("imgs/erumple.png").convert_alpha()
+skull_image = pygame.image.load("imgs/eskull.png").convert_alpha()
+toll_image = pygame.image.load("imgs/etoll.png").convert_alpha()
+swamp_image = pygame.image.load("imgs/eswamp.png").convert_alpha()
+town_image = pygame.image.load("imgs/etown.png").convert_alpha()
 
 alive = [True, True, True, True, True]
 names = ["Shrek", "Fiona", "Gingerman", "Puss in Boots", "Baby Ogres"]
-images = [pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/cshrek.png"), pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/cfiona.png"), pygame.image.load(
-    "C:/Users/adpoi/Documents/mypython/shrek/cgingerman.png"), pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/cpussinboots.png"), pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/cbabyogres.png")]
-dimages = [pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/dshrek.png"), pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/dfiona.png"), pygame.image.load(
-    "C:/Users/adpoi/Documents/mypython/shrek/dgingerman.png"), pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/dpussinboots.png"), pygame.image.load("C:/Users/adpoi/Documents/mypython/shrek/dbabyogres.png")]
+images = [pygame.image.load("imgs/cshrek.png"), pygame.image.load("imgs/cfiona.png"), pygame.image.load(
+    "imgs/cgingerman.png"), pygame.image.load("imgs/cpussinboots.png"), pygame.image.load("imgs/cbabyogres.png")]
+dimages = [pygame.image.load("imgs/dshrek.png"), pygame.image.load("imgs/dfiona.png"), pygame.image.load(
+    "imgs/dgingerman.png"), pygame.image.load("imgs/dpussinboots.png"), pygame.image.load("imgs/dbabyogres.png")]
 
 for x in images:
     x = x.convert_alpha(x)
@@ -732,7 +732,7 @@ while not done:
     # screen.blit(shrek_image, [500, -35])
     counter = counter + 1
     counter1 = counter1 + 1
-    clock.tick(1000)
+    clock.tick(60)
     pygame.display.flip()
 
 pygame.quit()
