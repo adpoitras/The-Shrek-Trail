@@ -21,7 +21,9 @@
 # SOFTWARE.
 
 name: pygbag_build
-on: [workflow_dispatch]
+on: 
+  push:
+    branches: [ "main" ]
 
 
 jobs:
