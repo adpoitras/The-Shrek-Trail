@@ -33,10 +33,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Checkout
+    - uses: actions/setup-python@v4 
+      with:
+        python-version: '3.9' 
+    - name: Checkout and Build
       run: |
-            python3 -m pip install --user --upgrade -r $GITHUB_WORKSPACE/requirements.txt
-            python3 -m pygbag --build $GITHUB_WORKSPACE/main.py
+            python --version
+            python -m pip install -r $GITHUB_WORKSPACE/requirements.txt
+            python -m pygbag --build $GITHUB_WORKSPACE/main.py
     - name : "Upload to GitHub pages"
       uses: JamesIves/github-pages-deploy-action@4.1.7
       with:
