@@ -309,19 +309,19 @@ async def main():
         if(section == 2):  # speed
             text_write(Large, "How fast do you want your convoy", 500, 70)
             text_write(Large, "to go at first?", 500, 110)
-            text_write(Large, "1. Leisurely (1 mile per day)", 500, 200)
-            text_write(Large, "2. Paced (3 miles/day)", 500, 300)
-            text_write(Large, "3. Grueling (5 miles/day)", 500, 400)
+            text_write(Large, "1. Leisurely (3 mile per day)", 500, 200)
+            text_write(Large, "2. Paced (5 miles/day)", 500, 300)
+            text_write(Large, "3. Grueling (8 miles/day)", 500, 400)
             if(pace == 1):
                 if(switch == 0):
-                    text_write(Large, "1. Leisurely (1 mile per day)",
+                    text_write(Large, "1. Leisurely (3 mile per day)",
                                500, 200, GREEN)
             if pace == 2:
                 if(switch == 0):
-                    text_write(Large, "2. Paced (3 miles/day)", 500, 300, GREEN)
+                    text_write(Large, "2. Paced (5 miles/day)", 500, 300, GREEN)
             if pace == 3:
                 if(switch == 0):
-                    text_write(Large, "3. Grueling (5 miles/day)", 500, 400, GREEN)
+                    text_write(Large, "3. Grueling (8 miles/day)", 500, 400, GREEN)
             if pace != 0:
                 if(switch == 0):
                     goAhead = 1
